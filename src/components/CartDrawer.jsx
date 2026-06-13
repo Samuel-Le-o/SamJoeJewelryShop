@@ -31,7 +31,7 @@ export default function CartDrawer() {
         {/* Header Action Row */}
         <div class="p-6 border-b border-neutral-900 flex items-center justify-between bg-avant-card">
           <div class="space-y-1">
-            <h2 class="font-serif text-sm tracking-widest text-white uppercase font-bold">Selection Vault</h2>
+            <h2 class="font-serif text-sm tracking-widest text-white uppercase font-bold">Selection Cart</h2>
             <p class="text-[8px] text-avant-gold tracking-[0.2em] uppercase font-semibold">
               {cart.length} Core Units Registered
             </p>
@@ -50,7 +50,7 @@ export default function CartDrawer() {
           {cart.length === 0 ? (
             <div class="h-64 flex flex-col items-center justify-center text-center space-y-3">
               <span class="text-[10px] tracking-[0.3em] text-neutral-600 uppercase font-bold">
-                Vault Status: Empty
+                Cart Status: Empty
               </span>
               <p class="text-[9px] text-neutral-500 normal-case max-w-[200px] font-light leading-relaxed">
                 Your high-concept asset container is unpopulated. Browse the current collection index to load elements.
@@ -130,7 +130,7 @@ export default function CartDrawer() {
               }}
               class="w-full bg-avant-gold text-avant-dark font-sans font-black text-[10px] uppercase tracking-[0.25em] py-4 flex items-center justify-center gap-2 hover:bg-white transition-colors duration-300 cursor-pointer"
             >
-              <Lock size={12} class="stroke-[2.5]" /> Secure Escrow Checkout
+              <Lock size={12} class="stroke-[2.5]" /> Proceed To Checkout
             </button>
             
             <p class="text-[8px] text-center text-neutral-600 normal-case tracking-normal font-light">

@@ -115,7 +115,7 @@ export default function QuickViewModal() {
               }}
               class="col-span-9 bg-avant-gold text-avant-dark font-sans font-black text-[10px] uppercase tracking-[0.2em] py-3.5 flex items-center justify-center gap-2 hover:bg-white transition-colors duration-300 cursor-pointer"
             >
-              <ShoppingCart size={12} class="stroke-[2.5]" /> Secure Inventory Intake
+              <ShoppingCart size={12} class="stroke-[2.5]" /> Add To Cart
             </button>
 
             <button

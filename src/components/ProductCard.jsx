@@ -72,7 +72,7 @@ export default function ProductCard({ product }) {
             onClick={() => addToCart(product, 1)}
             class="inline-flex items-center gap-1.5 text-[9px] uppercase font-bold tracking-widest text-neutral-300 hover:text-avant-gold transition-colors cursor-pointer"
           >
-            <ShoppingCart size={11} /> Acquire
+            <ShoppingCart size={11} /> Add To Cart
           </button>
         </div>
       </div>

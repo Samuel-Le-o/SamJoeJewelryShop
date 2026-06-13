@@ -21,11 +21,11 @@ export default function Footer() {
 
         {/* Column 2: Index Navigation */}
         <div class="md:col-span-4 space-y-3">
-          <h4 class="text-[9px] text-white tracking-[0.3em] font-black">The Index</h4>
+          <h4 class="text-[9px] text-white tracking-[0.3em] font-black">Links</h4>
           <div class="flex flex-col gap-2 text-neutral-500 font-medium">
-            <Link to="/shop" class="hover:text-yellow-400 transition-colors">All Assets</Link>
-            <Link to="/about" class="hover:text-yellow-400 transition-colors">Our Manifesto</Link>
-            <Link to="/contact" class="hover:text-yellow-400 transition-colors">Concierge Desk</Link>
+            <Link to="/shop" class="hover:text-yellow-400 transition-colors">Shop</Link>
+            <Link to="/about" class="hover:text-yellow-400 transition-colors">About Us</Link>
+            <Link to="/contact" class="hover:text-yellow-400 transition-colors">Contact</Link>
           </div>
         </div>
 
@@ -35,15 +35,15 @@ export default function Footer() {
           <div class="space-y-2 pt-1 text-neutral-400">
             <div class="flex items-center gap-2">
               <MapPin size={12} class="text-yellow-500 shrink-0" />
-              <span>Sowutoum, Accra, Ghana</span>
+              <span>Oduman, Accra, Ghana</span>
             </div>
             <div class="flex items-center gap-2">
               <Phone size={12} class="text-yellow-500 shrink-0" />
-              <span>+233 50 123 4567</span>
+              <span>+233 XXX XXXX</span>
             </div>
             <div class="flex items-center gap-2">
               <Mail size={12} class="text-yellow-500 shrink-0" />
-              <span class="lowercase">concierge@samjoeclassy.com</span>
+              <span class="lowercase">contact@samjoeclassy.com</span>
             </div>
           </div>
         </div>

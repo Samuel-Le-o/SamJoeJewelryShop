@@ -29,9 +29,9 @@ export default function Navbar() {
 
         {/* Desktop Anchor Architecture */}
         <div class="hidden md:flex items-center gap-8">
-          <NavLink to="/shop" class={getLinkStyle}>The Index</NavLink>
-          <NavLink to="/about" class={getLinkStyle}>Our Manifesto</NavLink>
-          <NavLink to="/contact" class={getLinkStyle}>Concierge Desk</NavLink>
+          <NavLink to="/shop" class={getLinkStyle}>Shop</NavLink>
+          <NavLink to="/about" class={getLinkStyle}>About Us</NavLink>
+          <NavLink to="/contact" class={getLinkStyle}>Contact</NavLink>
         </div>
 
         {/* Master Brand Identity Centerpiece */}
@@ -69,7 +69,7 @@ export default function Navbar() {
             aria-label="Open Selection Vault Drawer"
           >
             <ShoppingBag size={16} class="text-avant-gold" />
-            <span class="hidden sm:inline text-[9px] text-neutral-400 font-medium tracking-[0.15em]">Vault</span>
+            <span class="hidden sm:inline text-[9px] text-neutral-400 font-medium tracking-[0.15em]">Cart</span>
             <span class="bg-avant-gold text-avant-dark font-sans font-black text-[9px] px-1.5 py-0.5 -mt-1">
               {cartCount}
             </span>
@@ -87,10 +87,10 @@ export default function Navbar() {
             transition={{ duration: 0.25 }}
             class="absolute top-20 left-0 w-full bg-avant-surface border-b border-neutral-950 flex flex-col px-8 py-8 gap-5 border-t border-neutral-900 md:hidden shadow-2xl"
           >
-            <NavLink to="/shop" onClick={() => setMobileOpen(false)} class={getLinkStyle}>The Index</NavLink>
-            <NavLink to="/about" onClick={() => setMobileOpen(false)} class={getLinkStyle}>Our Manifesto</NavLink>
-            <NavLink to="/contact" onClick={() => setMobileOpen(false)} class={getLinkStyle}>Concierge Desk</NavLink>
-            <NavLink to="/wishlist" onClick={() => setMobileOpen(false)} class={getLinkStyle}>Saved Assets</NavLink>
+            <NavLink to="/shop" onClick={() => setMobileOpen(false)} class={getLinkStyle}>Shop</NavLink>
+            <NavLink to="/about" onClick={() => setMobileOpen(false)} class={getLinkStyle}>About Us</NavLink>
+            <NavLink to="/contact" onClick={() => setMobileOpen(false)} class={getLinkStyle}>Contact</NavLink>
+            <NavLink to="/wishlist" onClick={() => setMobileOpen(false)} class={getLinkStyle}>Wishlist</NavLink>
             <NavLink to="/account" onClick={() => setMobileOpen(false)} class={getLinkStyle}>Account Terminal</NavLink>
           </motion.div>
         )}
