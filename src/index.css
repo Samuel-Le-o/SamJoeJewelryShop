@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-avant-dark: #0A0A0C;
+  --color-avant-surface: #121216;
+  --color-avant-card: #18181F;
+  --color-avant-gold: #FFD700;
+  --color-avant-neon: #E6C687;
+  --color-avant-muted: #8E8E9F;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+@utility focus-input-neon {
+  &:focus {
+    border-color: var(--color-avant-gold);
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-avant-dark);
+    color: #FFFFFF;
+    font-family: var(--font-sans);
+  }
+  input, textarea {
+    @apply border border-neutral-800 bg-avant-surface text-white px-4 py-3 text-sm transition-all duration-300 w-full focus:outline-none rounded-none;
+  }
+  input, textarea {
+    @extend .focus-input-neon;
+  }
+}
+
+/* Custom Minimalist Editorial Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFD700;
+}
